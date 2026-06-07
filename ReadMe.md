@@ -44,5 +44,5 @@ Do autoryzacji z rejestrem DockerHub jako backend cache wykorzystano standardowe
 ## 5. Potwierdzenie działania
 Poniżej znajduje się zrzut ekranu potwierdzające poprawne i pomyślne wykonanie zautomatyzowanego łańcucha (zielony status Action)
 
-![Sukces wykonania GitHub Actions](2.png)
+![Sukces wykonania GitHub Actions](2.PNG)
 
