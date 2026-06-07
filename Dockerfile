@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-# Aktualizacja podstawowych narzędzi Pythona przed instalacją Twoich zależności
+# Aktualizacja podstawowych narzędzi Pythona
 RUN pip install --upgrade pip setuptools wheel
 
 RUN --mount=type=cache,target=/root/.cache/pip \
@@ -19,7 +19,6 @@ FROM python:3.11-alpine
 
 WORKDIR /app
 
-# Aktualizacja podstawowych narzędzi Pythona w docelowym obrazie, aby załatać podatności CVE wyłapane przez Trivy
 RUN pip install --upgrade pip setuptools wheel
 
 COPY --from=builder /root/.local /root/.local
